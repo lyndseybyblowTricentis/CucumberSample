@@ -25,12 +25,12 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      $url = 'https://pulse-7.qtestnet.com/webhook/3e1eca1c-8bf1-4ae1-8aa7-6b22c94499b2'
+      $url = 'https://pulse-7.qtestnet.com/webhook/6127cbe5-249d-4a12-8c65-ef7623206bab'
             Set-Location -Path ".\target"
             $payload = (Get-Content "cucumber-report.json" -Raw)
             $body = @{
-              'projectId' = '90092'
-              'test-cycle' = '1782970'
+              'projectId' = '97825'
+              'test-cycle' = '2131031'
               'requiresDecode' = 'true'
               'result' = $payload
             }
